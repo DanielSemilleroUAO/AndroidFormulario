@@ -35,6 +35,19 @@ public class MainActivity extends AppCompatActivity {
         descripcion = (TextInputEditText) findViewById(R.id.descripcion_ingresado);
         siguiente = (Button) findViewById(R.id.siguiente);
 
+        try {
+            Bundle parametros = getIntent().getExtras();
+            ArrayList<String> datos_r = parametros.getStringArrayList("datos_r");
+            String fechar_r = datos_r.get(1);
+            String[] a = fechar_r.split("/");
+            nombre.setText(datos_r.get(0));
+            telefono.setText(datos_r.get(2));
+            correo.setText(datos_r.get(3));
+            descripcion.setText(datos_r.get(4));
+            fecha_nacimiento.updateDate(Integer.parseInt(a[2]),Integer.parseInt(a[0]),Integer.parseInt(a[1]));
+        } catch (Exception e){
+
+        }
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

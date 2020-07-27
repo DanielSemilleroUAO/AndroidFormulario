@@ -12,6 +12,8 @@ import java.util.ArrayList;
 
 public class Main2Activity extends AppCompatActivity {
 
+    ArrayList<String> datos_editar;
+
     Button volver;
     TextView nombre;
     TextView fecha;
@@ -40,10 +42,19 @@ public class Main2Activity extends AppCompatActivity {
         correo.setText("Email: "+datos.get(3));
         descripcion.setText(datos.get(4));
 
+        datos_editar = new ArrayList<>();
+
+        datos_editar.add(datos.get(0));
+        datos_editar.add(datos.get(1));
+        datos_editar.add(datos.get(2));
+        datos_editar.add(datos.get(3));
+        datos_editar.add(datos.get(4));
+
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Main2Activity.this,MainActivity.class);
+                i.putStringArrayListExtra("datos_r",datos_editar);
                 startActivity(i);
                 finish();
             }
