@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margen_principal"
+    android:layout_marginRight="@dimen/margen_principal"
+    android:layout_marginLeft="@dimen/margen_principal"
+    android:layout_marginTop="@dimen/margen_principal"
+    android:background="@color/colorFondo"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:fontFamily="monospace"
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen_principal"
+        android:layout_marginRight="@dimen/margen_principal"
+        android:layout_marginLeft="@dimen/margen_principal"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:textAlignment="center"
+        android:text="@string/Titulo2"
+        android:textSize="@dimen/margen_date">
+    </TextView>
+
+    <TextView
+        android:layout_marginTop="@dimen/margen_date"
+        android:layout_marginBottom="@dimen/margen_principal"
+        android:id="@+id/nombre"
+        android:layout_below="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_prueba"
+        android:textSize="@dimen/texto">
+    </TextView>
+
+    <TextView
+        android:layout_marginBottom="@dimen/margen_principal"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:id="@+id/fecha"
+        android:layout_below="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_prueba">
+    </TextView>
+
+    <TextView
+        android:layout_marginBottom="@dimen/margen_principal"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:id="@+id/telefono"
+        android:layout_below="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono_prueba">
+    </TextView>
+
+    <TextView
+        android:layout_marginBottom="@dimen/margen_principal"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:id="@+id/email"
+        android:layout_below="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_prueba">
+    </TextView>
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margen_principal"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:id="@+id/descri"
+        android:layout_below="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion:">
+        </TextView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripción_prueba">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:textSize="@dimen/texto"
+        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buton"
+        android:layout_below="@+id/descri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Datos"></Button>
+
+</RelativeLayout>

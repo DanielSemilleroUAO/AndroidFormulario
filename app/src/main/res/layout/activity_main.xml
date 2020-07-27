@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorFondo">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:layout_marginLeft="@dimen/margen_principal"
+        android:layout_marginRight="@dimen/margen_principal"
+        android:layout_marginBottom="@dimen/margen_principal">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombre_ingresado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tnombre" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margen_date"
+        android:layout_marginRight="@dimen/margen_date"
+        android:id="@+id/lfecha"
+        android:layout_below="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margen_principal"
+            android:layout_marginLeft="@dimen/margen_principal"
+            android:layout_marginRight="@dimen/margen_principal"
+            android:layout_marginBottom="@dimen/margen_principal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/texto"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fechaNacimiento">
+            </TextView>
+
+        </RelativeLayout>
+
+        <DatePicker
+            android:id="@+id/fecha"
+            android:background="@color/colorBlanco"
+            android:datePickerMode="spinner"
+            android:layout_width="match_parent"
+            android:calendarViewShown="false"
+            android:spinnersShown="true"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/margen_principal"
+            android:layout_marginRight="@dimen/margen_principal"
+            android:theme="@style/MyDatePicker">
+        </DatePicker>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telefono"
+        android:layout_below="@+id/lfecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:layout_marginLeft="@dimen/margen_principal"
+        android:layout_marginRight="@dimen/margen_principal"
+        android:layout_marginBottom="@dimen/margen_principal">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telefono_ingresado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ttelefono" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_below="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:layout_marginLeft="@dimen/margen_principal"
+        android:layout_marginRight="@dimen/margen_principal"
+        android:layout_marginBottom="@dimen/margen_principal">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_ingresado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/temail" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:textSize="@dimen/texto"
+        android:id="@+id/descripcionT"
+        android:layout_below="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tDescripcion"
+        android:layout_marginTop="@dimen/margen_principal"
+        android:layout_marginLeft="@dimen/margen_principal"
+        android:layout_marginRight="@dimen/margen_principal">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descripcion"
+        android:layout_below="@+id/descripcionT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margen_principal"
+        android:layout_marginRight="@dimen/margen_principal"
+        android:layout_marginBottom="@dimen/margen_principal">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descripcion_ingresado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:textSize="@dimen/texto"
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="@string/bsiguiente"
+        android:theme="@style/MiBotonRaise">
+    </Button>
+
+</RelativeLayout>

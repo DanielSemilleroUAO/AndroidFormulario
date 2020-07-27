@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="tnombre">Nombre completo</string>
+    <string name="ttelefono">Telefono</string>
+    <string name="temail">Email</string>
+    <string name="tDescripcion">Descripción Contacto</string>
+    <string name="tconfirmar">Confirmar Datos</string>
+    <string name="tnacimiento">Fecha nacimiento</string>
+    <string name="tel">Tel.</string>
+    <string name="email">Email:</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="bsiguiente">Seguiente</string>
+    <string name="fechaNacimiento">Fecha de Nacimiento</string>
+
+    <string name="Titulo2">Confirmar Datos</string>
+    
+    <string name="nombre_prueba">Daniel Delgado Rodríguez</string>
+    <string name="telefono_prueba">Tel: 55555555</string>
+    <string name="email_prueba">Email: danieldelgado@hotmail.com</string>
+    <string name="fecha_prueba">Fecha Nacimiento:06/21/1996</string>
+    <string name="descripción_prueba">Una persona muy perseverante en lo que hace. Le gustan los deportes como el futbol y basketball</string>
+</resources>
